@@ -76,16 +76,8 @@ onMounted(async () => {
                 </template>
                 <template #extra>
                   <n-space>
-                    <div v-if="settings.enable_login">
-                      <n-button v-if="settings.user_name" @click="logOut">登出</n-button>
-                      <n-button v-else type="primary" @click="router.push('/login')">登录</n-button>
-                    </div>
                     <n-button @click="themeStorage = (themeStorage == 'dark' ? 'light' : 'dark')">
                       {{ themeStorage == 'dark' ? '亮色' : '暗色' }}
-                    </n-button>
-                    <n-button type="primary" ghost tag="a" target="_blank"
-                      href="https://github.com/dreamhunter2333/chatgpt-tarot-divination">
-                      ☆ Github
                     </n-button>
                   </n-space>
                 </template>
@@ -93,8 +85,8 @@ onMounted(async () => {
                   <n-alert v-if="settings.user_name" type="success">
                     你好, {{ settings.login_type }} 用户 {{ settings.user_name }}
                   </n-alert>
-                  <n-alert v-else-if="settings.enable_login && settings.enable_rate_limit" type="warning">
-                    当前未登录, 处于限流模式 ({{ settings.rate_limit }})
+                  <n-alert v-else-if="settings.enable_login && settings.enable_rate_limit" type="info">
+                    当前处于限流模式 ({{ settings.rate_limit }})
                   </n-alert>
                 </template>
               </n-page-header>
