@@ -11,6 +11,10 @@
 
 ![demo](https://github.com/user-attachments/assets/a4dd8d48-9e67-40ff-b1ad-8e5bea3035f6)
 
+![image](https://github.com/user-attachments/assets/9bf71e94-0bb9-4173-a02b-4476ea7c0a9d)
+
+![image](https://github.com/user-attachments/assets/3f7a0a27-d6a0-4d76-bbef-44c25f12ab24)
+
 ## Deploy by docker
 
 ```yaml
