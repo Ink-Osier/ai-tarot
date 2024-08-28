@@ -1,7 +1,7 @@
 <script setup>
 import {
   NGrid, NGi, NSpace, NAlert, NButton, NMessageProvider, NPageHeader,
-  NConfigProvider, NGlobalStyle, NBackTop, zhCN, darkTheme, NSpin
+  NConfigProvider, NGlobalStyle, NBackTop, zhCN, darkTheme, NSpin, NGradientText
 } from 'naive-ui'
 import { onMounted, ref, computed } from "vue";
 import { useRouter } from 'vue-router'
@@ -73,12 +73,20 @@ onMounted(async () => {
               <n-page-header :subtitle="isMobile ? '' : '本项目仅供娱乐'">
                 <template #title>
                   <h3>AI 占卜</h3>
+                  
                 </template>
                 <template #extra>
                   <n-space>
                     <n-button @click="themeStorage = (themeStorage == 'dark' ? 'light' : 'dark')">
                       {{ themeStorage == 'dark' ? '亮色' : '暗色' }}
                     </n-button>
+
+                    <n-button>
+                      <n-gradient-text type="success" dashed>
+                        Powered by Wizerd
+                      </n-gradient-text>
+                    </n-button>
+                    
                   </n-space>
                 </template>
                 <template #footer>
