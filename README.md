@@ -1,6 +1,6 @@
 # AI Tarot
 
-> [!INFO]
+> [!IMPORTANT]
 >
 > 本项目为在项目[chatgpt tarot divination](https://github.com/dreamhunter2333/chatgpt-tarot-divination)基础上二开而来。
 
