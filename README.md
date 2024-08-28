@@ -9,7 +9,7 @@
 - [x] 塔罗牌（三张牌占卜法）
 - [x] 塔罗牌（维纳斯牌阵）
 
-![demo](a![image](https://github.com/user-attachments/assets/a4dd8d48-9e67-40ff-b1ad-8e5bea3035f6))
+![demo](https://github.com/user-attachments/assets/a4dd8d48-9e67-40ff-b1ad-8e5bea3035f6)
 
 ## Deploy by docker
 
